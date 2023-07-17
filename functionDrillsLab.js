@@ -354,15 +354,16 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 function goingUp(x){
+  let compareVal = x[0]
   for(let i = 0; i < x.length; i++){
-    if(x[i] > x[i + 1]){
+    if(x[i] < compareVal){
       return false
     }else {
-      return true
+      compareVal = x[i]
     }
     
   }
-
+return true
 }
 console.log(goingUp(sampleArray))
 ////////////////// PROBLEM 22 ////////////////////
